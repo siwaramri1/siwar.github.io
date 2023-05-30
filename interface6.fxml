@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="#f94e3f" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="636.0" style="-fx-background-color: peru;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.interface6Controller">
+   <children>
+      <TableView fx:id="tableproduit" layoutX="248.0" layoutY="56.0" onMouseClicked="#afficherproduit" prefHeight="281.0" prefWidth="363.0" style="-fx-background-color: beige;">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="37.0" text="id" />
+          <TableColumn fx:id="nom" prefWidth="65.0" text="Nom" />
+            <TableColumn fx:id="description" prefWidth="107.0" text="Description" />
+            <TableColumn fx:id="catégorie" prefWidth="83.0" text="Catégorie" />
+            <TableColumn fx:id="prix" prefWidth="83.0" text="Prix" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="-4.0" layoutY="-2.0" prefHeight="366.0" prefWidth="214.0" style="-fx-background-color: saddlebrown;">
+         <children>
+            <Button fx:id="a1" layoutX="59.0" layoutY="220.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: peachpuff;" text="Ajouter">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="s1" layoutX="59.0" layoutY="253.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: peachpuff;" text="Supprimer">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="m1" layoutX="59.0" layoutY="288.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: peachpuff;" text="Modifier" />
+            <TextField fx:id="idtxt" layoutX="33.0" layoutY="36.0" promptText="id" />
+            <TextField fx:id="nomtxt" layoutX="33.0" layoutY="71.0" promptText="nom" />
+            <TextField fx:id="prixtxt" layoutX="33.0" layoutY="183.0" promptText="prix" />
+            <TextField fx:id="descriptxt" layoutX="33.0" layoutY="110.0" promptText="description" />
+            <TextField fx:id="categtxt" layoutX="33.0" layoutY="148.0" promptText="catégorie" />
+            <Button fx:id="pg" layoutX="55.0" layoutY="320.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: peachpuff;" text="Page précédente" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="341.0" layoutY="-15.0" prefHeight="82.0" prefWidth="188.0" text="Gestion Coffee" textFill="#510808" underline="true">
+         <font>
+            <Font name="Gadugi Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

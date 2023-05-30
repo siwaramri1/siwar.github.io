@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="476.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.interface3Controller">
+   <children>
+      <AnchorPane prefHeight="46.0" prefWidth="571.0" style="-fx-background-color: brown;">
+         <children>
+            <Label layoutX="7.0" layoutY="8.0" prefHeight="33.0" prefWidth="162.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="143.0" fitWidth="114.0" layoutX="23.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pictures/Siad/55f87b082c2e6f655957e29725e8a0d8.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="206.0" prefHeight="33.0" prefWidth="99.0" text="Café lattee" textFill="#4d4949">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="167.0" layoutY="75.0" prefHeight="92.0" prefWidth="200.0" promptText="L'intensité de notre espresso rencontre la douceur du lait chauffé à la vapeur, le tout recouvert d'une fine couche de mousse de lait.">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="11.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="a1" layoutX="167.0" layoutY="181.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: brown;" text="Ajouter" textFill="WHITE" />
+      <ImageView fitHeight="148.0" fitWidth="118.0" layoutX="26.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pictures/Siad/6b1df056933cb78c7a2029dea19f646f.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="390.0" text="Cappuccino" textFill="#494242">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="161.0" layoutY="261.0" prefHeight="69.0" prefWidth="200.0" promptText="Un espresso surmonté d'une onctueuse couche de mousse de lait." />
+      <Button fx:id="a2" layoutX="167.0" layoutY="348.0" mnemonicParsing="false" onAction="#ajouter2" style="-fx-background-color: brown;" text="Ajouter" textFill="WHITE" />
+      <Button fx:id="m1" layoutX="238.0" layoutY="181.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: brown;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="s1" layoutX="315.0" layoutY="181.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: brown;" text="Supprimer" textFill="WHITE" />
+      <Button fx:id="m2" layoutX="235.0" layoutY="349.0" mnemonicParsing="false" onAction="#modifier2" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: brown;" text="Modifier" textFill="WHITE" />
+      <Button fx:id="s2" layoutX="321.0" layoutY="349.0" mnemonicParsing="false" onAction="#supprimer2" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: brown;" text="Supprimer" textFill="WHITE" />
+   </children>
+</AnchorPane>
